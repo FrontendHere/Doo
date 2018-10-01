@@ -46,7 +46,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 9000,
+    port: 8080,
     logPrefix: "IamFrontend"
 };
 
@@ -78,12 +78,18 @@ gulp.task('css:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('build', [
+    'html:build',
+    'js:build',
+    'css:build'
+]);
+
 //Перезагрузка сервера
 gulp.task('webserver', function () {
     browserSync(config);
 });
 
-//Удаление в build при удалении в src
+//Задача для удаления всей папки build
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
@@ -102,4 +108,4 @@ gulp.task('watch', function(){
 });
 
 //Последний дефолтный таск для запуска собрки по команде gulp
-gulp.task('default', ['watch', 'webserver', 'clean']);
+gulp.task('default', ['build', 'watch', 'webserver']);
