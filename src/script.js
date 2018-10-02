@@ -1,3 +1,3 @@
 ;$(document).ready(function() {
-	//= first-monitor/header/nav/nav.js
+	//= first-monitor/header/menu/menu.js
 });

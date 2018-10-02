@@ -1,5 +1,16 @@
-.header{
-	border-bottom: 1px solid #474d4f;
-	display: flex;
-	align-items: center;
+.header{	
+	&__container{
+		display: flex;
+		align-items: center;		
+	}
+
+
+
+
+	&+hr{
+		border: none;
+		height: 1px;
+		margin-top: -1px;
+		background-color: #444b4d;
+	}
 }
