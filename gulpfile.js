@@ -37,8 +37,8 @@ var path = {
         scss: 'src/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
-    },
-    clean: './build'
+    }//,
+    //clean: './build'
 };
 
 var config = {
@@ -47,7 +47,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 8080,
+    port: 9000,
     logPrefix: "IamFrontend"
 };
 
@@ -91,9 +91,9 @@ gulp.task('webserver', function () {
 });
 
 //Задача для удаления всей папки build
-gulp.task('clean', function (cb) {
+/*gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
-});
+});*/
 
 //Объединение задач
 gulp.task('watch', function(){

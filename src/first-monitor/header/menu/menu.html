@@ -1,10 +1,25 @@
 <div class="menu">
 	<nav class="menu__nav">
-		<a href="" class="menu__link">Homepage</a>
-		<a href="" class="menu__link">Pages</a>
-		<a href="" class="menu__link">Portfolio</a>
-		<a href="" class="menu__link">Blog</a>
-		<a href="" class="menu__link">Shop</a>
-		<a href="" class="menu__link">Contact</a>
+		<ul class="menu__ul">
+			<li class="menu__li">
+				<a href="" class="menu__link">Homepage</a>
+			</li>
+			<li class="menu__li">
+				<a href="" class="menu__link">Pages <i class="fa fa-angle-down menu__fa" aria-hidden="true"></i></a>
+				@@include('__submenu/menu__submenu.html')
+			</li>
+			<li class="menu__li">
+				<a href="" class="menu__link">Portfolio</a>
+			</li>
+			<li class="menu__li">
+				<a href="" class="menu__link">Blog</a>
+			</li>
+			<li class="menu__li">
+				<a href="" class="menu__link">Shop</a>
+			</li>
+			<li class="menu__li">
+				<a href="" class="menu__link">Contact</a>
+			</li>
+		</ul>
 	</nav>
 </div>
