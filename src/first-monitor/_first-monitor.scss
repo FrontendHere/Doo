@@ -1,9 +1,9 @@
 $height-fm: 1040px;
-.first-monitor{
+.first-monitor-i{
 	background: rgba(47,54,58, .9);
 	height: $height-fm;
 }
-.first-monitor__inner-image{
+.first-monitor-i__inner-image{
 	background: url(../img/bg-first-monitor.jpg) no-repeat;
 	z-index: -1;
 	position: absolute;
