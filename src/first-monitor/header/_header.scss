@@ -16,3 +16,12 @@
 		background-color: #444b4d;
 	}
 }
+
+@media (max-width: 991px){
+	.header-i{
+		padding-top: 20px;
+		&+hr{
+			display: none;
+		}		
+	}
+}
