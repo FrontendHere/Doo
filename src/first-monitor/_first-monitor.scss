@@ -1,12 +1,30 @@
 $height-fm: 1040px;
 .first-monitor-i{
 	background: rgba(47,54,58, .9);
-	height: $height-fm;
+	&__inner-image{
+		background: url(../img/bg-first-monitor.jpg) no-repeat;
+		z-index: -1;
+		position: absolute;	
+		width: 100%;
+	}
+	&__section{
+		height: 100%;
+	}
+	&__container{
+		display: table;
+		height: 100%;	
+	}
+	&__main-block{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+	}
 }
-.first-monitor-i__inner-image{
-	background: url(../img/bg-first-monitor.jpg) no-repeat;
-	z-index: -1;
-	position: absolute;
-	height: $height-fm;
-	width: 100%;
+@media (min-width: 992px){
+	.first-monitor-i{
+		height: $height-fm;
+		&__inner-image{
+			height: $height-fm;
+		}
+	}
 }
