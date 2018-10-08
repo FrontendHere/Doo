@@ -1,0 +1,48 @@
+.about-i{
+	padding:{
+		top: 160px;
+		bottom: 160px;
+	}
+	&__col{
+		width: 50%;
+		display: inline-block;
+	}
+	&__p{
+		color: $gray;
+		padding:{
+			top: 60px;
+			bottom: 40px;
+		}
+		font:{
+			family: $semi-Bold;
+			size: .875rem;
+		}
+		line-height: 1.5;
+	}
+	&__div{
+		@extend .about-i__p;
+		padding: 0;
+	}
+	&__ul{
+		display: flex;
+		flex:{
+			wrap: wrap;
+		}
+		justify-content: space-between;
+	}
+	&__li{
+		padding:{
+			bottom: 15px;
+		}
+		&:before{
+			display: inline-block;
+			content: "";
+			background: url(../img/check.png) no-repeat;
+			width: 14px;
+			height: 14px;
+			padding:{
+				right: 15px;
+			}
+		}
+	}
+}

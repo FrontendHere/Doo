@@ -1,0 +1,17 @@
+.button-i{
+	color: #fff;
+	border: 2px solid $red;
+	border-radius: 19px;
+    padding: 14px 38px;
+    background: none;
+    text-transform: uppercase;
+    font:{
+    	size: $primary-fz;
+    	family: $bold;
+    }
+    transition: all .3s;
+    cursor: pointer;
+}
+.button-i:hover{
+	background-color: $red;
+}
