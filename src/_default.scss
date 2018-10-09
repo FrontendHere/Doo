@@ -9,6 +9,7 @@ $primary-fz: .75rem;
 $red: #ff5722;
 $gray: #929292;
 $black: #2a2e31;
+
 html{
 	font-size: 16px;
 }
@@ -28,26 +29,6 @@ html{
     display: table;
     clear: both;
 }
-@media (max-width: 1199px){
-	.container{
-		width: 960px;
-	}
-}
-@media (max-width: 991px){
-	.container{
-		width: 720px;
-	}
-}
-@media (max-width: 767px){
-	.container{
-		width: 540px;
-	}
-}
-@media (max-width: 575px){
-	.container{
-		width: auto;
-	}
-}
 h1{
 	color: #fff;
 	font:{
@@ -61,6 +42,8 @@ h2{
 		family: $regular;
 		size: 3.3333rem;
 	}
+	letter-spacing: 3px;
+	color: #fff;
 	&:after{
 		display: block;
 		margin:{
@@ -72,6 +55,49 @@ h2{
 		width: 95px;
 		height: 18px;
 	}	
+}
+.h2-transparent{
+	&:after{
+		display: block;
+		margin:{
+			left: auto;
+			right: auto;
+		}
+		content: "";
+		background: url(../img/h2-transparent.png) no-repeat;
+		width: 95px;
+		height: 18px;
+	}	
+}
+@media (max-width: 1199px){
+	.container{
+		width: 960px;
+	}
+}
+@media (max-width: 991px){
+	.container{
+		width: 720px;
+	}
+	h2{
+		font:{
+			size: 2.5rem;
+		}
+	}	
+}
+@media (max-width: 767px){
+	.container{
+		width: 540px;
+	}
+	h2{
+		font:{
+			size: 2rem;
+		}
+	}
+}
+@media (max-width: 575px){
+	.container{
+		width: auto;
+	}
 }
 .black{
 	color: $black;

@@ -1,0 +1,14 @@
+.services-i{
+	display: flex;
+	align-items: center;
+	background: url(../img/bg-services.jpg) no-repeat;
+	height: 715px;
+	margin:{
+		left: auto;
+		right: auto;
+	}
+	&__h2{
+		text-align: center;
+		display: block;
+	}
+}

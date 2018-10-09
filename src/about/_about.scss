@@ -29,6 +29,10 @@
 }
 @media (max-width: 767px){
 	.about-i{
+		padding:{
+			top: 60px;
+			bottom: 60px;
+		}
 		&__col{
 			width: 100%;
 			float: none;
