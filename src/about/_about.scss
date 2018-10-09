@@ -1,11 +1,13 @@
 .about-i{
 	padding:{
 		top: 160px;
-		bottom: 160px;
 	}
 	&__col{
 		width: 50%;
-		display: inline-block;
+		float: left;
+		&_right{
+			text-align: right;
+		}
 	}
 	&__p{
 		color: $gray;
@@ -19,30 +21,20 @@
 		}
 		line-height: 1.5;
 	}
-	&__div{
-		@extend .about-i__p;
-		padding: 0;
+	&:after{
+		display: table;
+		content: "";
+		clear: both;		
 	}
-	&__ul{
-		display: flex;
-		flex:{
-			wrap: wrap;
-		}
-		justify-content: space-between;
-	}
-	&__li{
-		padding:{
-			bottom: 15px;
-		}
-		&:before{
-			display: inline-block;
-			content: "";
-			background: url(../img/check.png) no-repeat;
-			width: 14px;
-			height: 14px;
-			padding:{
-				right: 15px;
-			}
+}
+@media (max-width: 767px){
+	.about-i{
+		&__col{
+			width: 100%;
+			float: none;
+			&_right{
+				display: none;
+			}			
 		}
 	}
 }

@@ -1,0 +1,37 @@
+.ul-i{
+	@extend .about-i__p;
+	padding: 0;
+	width: 100%;
+	&__li{
+		padding:{
+			bottom: 15px;
+		}
+		width: 50%;
+		float: left;
+		span{
+			&:before{
+				display: inline-block;
+				content: "";
+				background: url(../img/check.png) no-repeat;
+				width: 14px;
+				height: 14px;
+				padding:{
+						right: 15px;
+				}
+			}			
+		}					
+	}
+	&:after{
+		display: table;
+		content: "";
+		clear: both;
+	}
+}
+@media (max-width: 1200px){
+	.ul-i{
+		&__li{
+			width: 100%;
+			float: none;
+		}
+	}
+}
