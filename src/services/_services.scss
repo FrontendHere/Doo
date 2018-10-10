@@ -98,13 +98,19 @@
 			bottom: 60px;
 		}
 		background-image: none;
-   	 	background-color: #ccc;
+   	 	background-color: rgba(47,54,58,.9);
 		&__service{
 			flex-direction: column;
+		}
+		&__service_right{
+			flex-direction: column-reverse;
 		}
 		&__service-img{
 			width: 60px;
 			height: 60px;
+			i{
+				font-size: 21px;
+			}
 		}
 		&__service-desc{
 			width: auto;
