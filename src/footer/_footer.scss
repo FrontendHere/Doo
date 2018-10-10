@@ -1,0 +1,24 @@
+.footer-i{
+	background: url(../img/bg-footer.jpg) no-repeat;
+	height: 462px;
+	border-bottom: 2px solid $red;
+	display: flex;
+	align-items: center;
+	color: $gray-transparent;
+	text-align: center;
+	font:{
+		size: .875rem;
+		family: $medium;
+	}
+	.logo-i{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	p{
+		max-width: 570px;
+		margin:{
+			left: auto;
+			right: auto;
+		}
+	}
+}

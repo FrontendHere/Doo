@@ -9,6 +9,7 @@ $primary-fz: .75rem;
 //Color
 $red: #ff5722;
 $gray: #929292;
+$gray-transparent: rgba(255,255,255,.3);
 $black: #2a2e31;
 
 html{
@@ -106,6 +107,9 @@ h3{
 }
 .black{
 	color: $black;
+}
+.red{
+	color: $red;
 }
 .col50{
 	float: left;

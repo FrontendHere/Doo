@@ -1,0 +1,11 @@
+.partners-i{
+	padding:{
+		top: 60px;
+		bottom: 60px;
+	}
+	&__container{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
