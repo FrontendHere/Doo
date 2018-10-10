@@ -11,4 +11,113 @@
 		text-align: center;
 		display: block;
 	}
+	&__service{
+		display: flex;
+    	align-items: center;
+    	padding:{
+    		top: 25px;
+    		bottom: 25px;
+    	}
+    	h3{
+    		transition: all .3s;
+    	}
+    	&:after{
+			@extend .container:after;
+		}
+		&:hover .services-i__service-img{
+			border-color: $red;
+			background-color: $red;			
+		}
+		&:hover .services-i__service-img i{
+			color: #fff;		
+		}
+		&:hover .services-i__service-desc h3{
+			color: $red;			
+		}
+		&_right{
+			justify-content: flex-end;
+		}			
+	}
+	&__service-img{
+		border: 2px solid #fff;
+		transform: rotate(45deg);
+		width: 70px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all .3s;
+		border-radius: 3px;
+		i{
+			color: $red;
+			transform: rotate(-45deg);
+			font-size: 32px;
+			transition: all .3s;
+		}
+	}
+	&__service-desc{
+		padding-left: 45px;
+		width: 350px;
+		p{
+			font:{
+				size: 14px;
+				family: $medium;
+			}
+			padding:{
+				top: 14px;
+			}
+			color: rgba(255,255,255,.3);
+		}
+		&_right{
+			padding:{
+				left: 0;
+				right: 45px;
+			}
+		}
+	}
+	&__col-right{
+		text-align: right;
+	}
+}
+@media (max-width: 991px){
+	.services-i{
+		&__service-img{
+			width: 60px;
+			height: 60px;
+		}
+		&__service-desc{
+			width: 250px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.services-i{
+		height: auto;
+		padding:{
+			top: 60px;
+			bottom: 60px;
+		}
+		background-image: none;
+   	 	background-color: #ccc;
+		&__service{
+			flex-direction: column;
+		}
+		&__service-img{
+			width: 60px;
+			height: 60px;
+		}
+		&__service-desc{
+			width: auto;
+		    text-align: center;
+		    padding: 0;
+		    padding-top: 25px;
+		}
+		&__col-right{
+			text-align: center;
+		}
+	}
+	.col50{
+		width: 100%;
+		float: none;
+	}
 }

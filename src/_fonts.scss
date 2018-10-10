@@ -2,7 +2,8 @@ $Raleway:(
 	Raleway-Regular,
 	Raleway-Bold,
 	Raleway-SemiBold,
-	Raleway-ExtraLight
+	Raleway-ExtraLight,
+	Raleway-Medium
 );
 @each $font in $Raleway{
 	@font-face{
