@@ -38,6 +38,9 @@ $height-fm: 1040px;
 }
 @media (max-width: 991px){
 	.first-monitor-i{
+		&__inner-image{
+			background: url(../img/bg-first-monitor-991.jpg) no-repeat;
+		}
 		&__section{
 			height: auto !important;
 			padding:{
@@ -55,6 +58,9 @@ $height-fm: 1040px;
 }
 @media (max-width: 767px){
 	.first-monitor-i{
+		&__inner-image{
+			background: none;
+		}		
 		&__p{
 			float: none;
 			text-align: center;

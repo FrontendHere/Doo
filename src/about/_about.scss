@@ -7,6 +7,10 @@
 		float: left;
 		&_right{
 			text-align: right;
+			padding-top: 155px;
+			img{
+				vertical-align: bottom;
+			}
 		}
 	}
 	&__p{
@@ -27,10 +31,20 @@
 		clear: both;		
 	}
 }
+@media (max-width: 991px){
+	.about-i{
+		padding-top: 60px;
+		&__col{
+			&_right{
+				padding-top: 60px;
+			}
+		}
+	}
+}
 @media (max-width: 767px){
 	.about-i{
+		text-align: center;
 		padding:{
-			top: 60px;
 			bottom: 60px;
 		}
 		&__col{

@@ -31,3 +31,10 @@
 		transition: all .3s;
 	}
 }
+@media (max-width: 575px){
+	.social-i{
+		a{
+			margin: 0 15px;
+		}
+	}
+}

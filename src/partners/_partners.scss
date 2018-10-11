@@ -9,3 +9,23 @@
 		align-items: center;
 	}
 }
+@media (max-width: 767px){
+	.partners-i{
+		&__container{
+			flex-wrap: wrap;
+			& > div{
+				width: 33%;
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: 575px){
+	.partners-i{
+		&__container{
+			& > div{
+				width: 50%;
+			}
+		}
+	}
+}

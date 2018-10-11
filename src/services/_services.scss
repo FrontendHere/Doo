@@ -81,6 +81,11 @@
 }
 @media (max-width: 991px){
 	.services-i{
+		height: auto;
+		padding:{
+			top: 60px;
+			bottom: 60px;
+		}
 		&__service-img{
 			width: 60px;
 			height: 60px;
@@ -92,11 +97,6 @@
 }
 @media (max-width: 767px){
 	.services-i{
-		height: auto;
-		padding:{
-			top: 60px;
-			bottom: 60px;
-		}
 		background-image: none;
    	 	background-color: rgba(47,54,58,.9);
 		&__service{
