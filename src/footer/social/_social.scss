@@ -5,7 +5,29 @@
 		top: 50px;
 		bottom: 50px;
 	}
+	a{
+		color: rgba(255,255,255,.5);
+		border: 1px solid rgba(255,255,255,.5);
+		transform: rotate(45deg);
+	    width: 30px;
+	    height: 30px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    transition: all .3s;
+	    border-radius: 3px;
+	    margin: 0 30px;
+	    &:hover{
+	    	border-color: $red;
+    		background-color: $red;
+	    }
+	    &:hover i{
+	    	color: #fff;
+	    }
+	}
 	i{
 		font-size: 18px;
+		transform: rotate(-45deg);
+		transition: all .3s;
 	}
 }
