@@ -1,12 +1,6 @@
 $height-fm: 1040px;
 .first-monitor-i{
-	background: rgba(47,54,58, .9);
-	&__inner-image{
-		background: url(../img/bg-first-monitor.jpg) no-repeat;
-		z-index: -1;
-		position: absolute;	
-		width: 100%;
-	}
+	background: url(../img/bg-first-monitor.jpg) no-repeat;
 	&__section{
 		height: 918px ;
 	}
@@ -38,9 +32,7 @@ $height-fm: 1040px;
 }
 @media (max-width: 991px){
 	.first-monitor-i{
-		&__inner-image{
-			background: url(../img/bg-first-monitor-991.jpg) no-repeat;
-		}
+		background: url(../img/bg-first-monitor-991.jpg) no-repeat;
 		&__section{
 			height: auto !important;
 			padding:{

@@ -48,3 +48,23 @@
 		}
 	}
 }
+@media (max-width: 767px){
+	.subscribe-i{
+		&__input-mail{
+			width: 70%;
+		}
+		&__submit{
+			width: 30%;
+		}
+	}
+}
+@media (max-width: 575px){
+	.subscribe-i{
+		&__input-mail{
+			width: 65%;
+		}
+		&__submit{
+			width: 35%;
+		}
+	}
+}
